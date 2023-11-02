@@ -3,10 +3,10 @@
 ob_clean();
 
 // Database connection details
-$db_host = 'localhost';
+$db_host = 'sql12.freesqldatabase.com';
 $db_name = 'sql12657302';
-$db_user = 'root';
-$db_password = 'arzelzolina10';
+$db_user = 'sql12657302';
+$db_password = 'fccsdFclad';
 
 try {
     // Create a new PDO instance
@@ -20,6 +20,7 @@ try {
         $user_password = $_POST['user_password'];
         $user_email = $_POST['user_email'];
         $user_phone = $_POST['user_phone'];
+        $user_fullname = $_POST['user_fullname'];
 
         // Check if the email already exists in the database
         $checkEmailQuery = "SELECT COUNT(*) FROM tbl_users WHERE user_email = :user_email";
@@ -37,10 +38,11 @@ try {
 
         if ($emailCount == 0 && $usernameCount == 0) {
             // Email and username don't exist, insert a new record
-            $insertQuery = "INSERT INTO tbl_users (user_name, user_password, user_email, user_phone, user_type, user_remarks) VALUES (:user_name, :user_password, :user_email, :user_phone, 'CLIENT', 'NEW')";
+            $insertQuery = "INSERT INTO tbl_users (user_name, user_password, user_fullname, user_email, user_phone, user_type, user_remarks) VALUES (:user_name, :user_password, :user_fullname, :user_email, :user_phone, 'CLIENT', 'NEW')";
             $stmt = $conn->prepare($insertQuery);
             $stmt->bindParam(':user_name', $user_name);
             $stmt->bindParam(':user_password', $user_password);
+            $stmt->bindParam(':user_fullname', $user_fullname);
             $stmt->bindParam(':user_email', $user_email);
             $stmt->bindParam(':user_phone', $user_phone);
             $stmt->execute();

@@ -1,10 +1,9 @@
 <?php
 // Database connection details
-$db_host = 'localhost';
+$db_host = 'sql12.freesqldatabase.com';
 $db_name = 'sql12657302';
-$db_user = 'root';
-$db_password = 'arzelzolina10';
-
+$db_user = 'sql12657302';
+$db_password = 'fccsdFclad';
 try {
     // Create a new PDO instance
     $conn = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user, $db_password);
@@ -27,7 +26,7 @@ try {
             $user_password = $data->user_password;
 
             // Prepare and execute the SQL query
-            $query = "SELECT user_id, user_name, user_email, user_phone, user_type FROM tbl_users WHERE user_name = :user_name AND user_password = :user_password";
+            $query = "SELECT user_id, user_name, user_email, user_phone, user_type, user_remarks FROM tbl_users WHERE user_name = :user_name AND user_password = :user_password";
             $stmt = $conn->prepare($query);
             $stmt->bindParam(':user_name', $user_name);
             $stmt->bindParam(':user_password', $user_password);
@@ -35,10 +34,17 @@ try {
 
             if ($stmt->rowCount() > 0) {
                 $row = $stmt->fetch(PDO::FETCH_ASSOC);
+                $userRemarks = $row['user_remarks'];
 
-                // User found, return user information
-                http_response_code(200);
-                echo json_encode($row);
+                if ($userRemarks === 'APPROVED') {
+                    // User is approved; return user information
+                    http_response_code(200);
+                    echo json_encode($row);
+                } else {
+                    // User is not approved
+                    http_response_code(401); // Unauthorized
+                    echo json_encode(array("error" => "Login failed. User not approved."));
+                }
             } else {
                 // User not found
                 http_response_code(401); // Unauthorized
