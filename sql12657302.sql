@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: sql12.freesqldatabase.com
--- Generation Time: Nov 01, 2023 at 02:15 PM
+-- Generation Time: Nov 02, 2023 at 05:09 PM
 -- Server version: 5.5.62-0ubuntu0.14.04.1
 -- PHP Version: 7.0.33-0ubuntu0.16.04.16
 
@@ -99,7 +99,15 @@ INSERT INTO `acrceditations` (`AcrceditationID`, `Name`, `BarangayID`, `address`
 (1, 'TAGPURO', 1, 'didi1 b', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (2, 'GREENDALE', 1, 'didi2 b', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (3, 'PATAG', 1, 'AWEFAWE', 'AWFEAWEFA', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(4, 'SAMAR', 2, 'AFA', 'AFEAAEFAWFE', 'AWFA', 'FAEF', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+(4, 'SAMAR', 2, 'AFA', 'AFEAAEFAWFE', 'AWFA', 'FAEF', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(5, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(6, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(7, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(8, 'a', NULL, 'a', 'a', 'q', 'a', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(9, 'arzel', NULL, 'uaus', 'dysys', 'dydyd', 'dydysy', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(10, '12', NULL, '12', '13', '12', '12', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(11, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(12, 'hahs', NULL, 's', 's', 'a', 's', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -246,8 +254,9 @@ CREATE TABLE `tbl_accreditations` (
 --
 
 INSERT INTO `tbl_accreditations` (`accreditation_id`, `accreditation_name`, `accreditation_barangay`, `BarangayID`, `accreditation_address`, `accreditation_contactperson`, `accreditation_phone`, `accreditation_number`, `accreditation_issued`, `accreditation_expired`, `accreditation_president`, `accreditation_type`, `accreditation_ddress`, `accreditation_members`, `accreditation_population`, `accreditation_belowm`, `accreditation_belowf`, `accreditation_belowo`, `accreditation_abovem`, `accreditation_abovef`, `accreditation_aboveo`, `accreditation_area`, `accreditation_class`, `accreditation_programs`, `accreditation_problems`, `accreditation_coordinator`, `accreditation_created`, `accreditation_remarks`) VALUES
+(1, 'PCUP', 'BOUGAINVILLA', NULL, '', 'Faith', '09456545414', '02021', 'November 02 2023', 'October 31 2023', 'lou', NULL, NULL, '5', '100', NULL, NULL, NULL, NULL, NULL, NULL, 'small', 'dfgfds', 'dfgds', 'pregnancy rate', 'dfsgfd', NULL, 'NEW'),
 (2, 'APPROVED', 'GUMAMELA', NULL, '234234', '23423', '', '', 'October 31 2023', 'Expiration : \r\n', '', NULL, NULL, '', '', NULL, NULL, NULL, NULL, NULL, NULL, '', '', '', '', '', NULL, 'APPROVED'),
-(56, 'sfasfsa', 'GUMAMELA', NULL, '2212', 'sefsef', '', '', 'October 31, 2023', 'October 31, 2023', '', NULL, NULL, '', '', NULL, NULL, NULL, NULL, NULL, NULL, '', '', '', '', '', NULL, 'APPROVED');
+(3, 'orgname', 'GUMAMELA', NULL, 'adress', 'contact', 'phone', 'acc number', 'October 31, 2023', 'October 31, 2023', 'presi', NULL, NULL, 'total ofice', 'poulation', NULL, NULL, NULL, NULL, NULL, NULL, 'area', 'class', 'programs', 'problem', 'acc officer', NULL, 'APPROVED');
 
 -- --------------------------------------------------------
 
@@ -261,47 +270,51 @@ CREATE TABLE `tbl_households` (
   `household_firstname` varchar(250) NOT NULL,
   `household_middlename` varchar(250) NOT NULL,
   `household_suffix` varchar(250) NOT NULL,
-  `household_birthdate` date DEFAULT NULL,
+  `household_birthdate` varchar(255) NOT NULL,
   `household_age` int(3) NOT NULL,
   `household_sex` varchar(250) NOT NULL,
   `household_student` varchar(250) NOT NULL,
   `household_education` varchar(250) NOT NULL,
   `employment` varchar(250) NOT NULL,
+  `household_school` varchar(250) NOT NULL,
   `source` varchar(250) NOT NULL,
   `pregnant` varchar(250) NOT NULL,
-  `last_preg` date NOT NULL,
+  `last_preg` varchar(255) NOT NULL,
   `children` int(11) NOT NULL,
-  `household_type` text NOT NULL,
+  `household_type` varchar(255) NOT NULL,
   `household_leader` varchar(250) NOT NULL,
-  `household_relation` varchar(250) NOT NULL
+  `household_relation` varchar(250) NOT NULL,
+  `household_barangay` varchar(255) NOT NULL,
+  `household_remarks` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `tbl_households`
 --
 
-INSERT INTO `tbl_households` (`household_id`, `household_lastname`, `household_firstname`, `household_middlename`, `household_suffix`, `household_birthdate`, `household_age`, `household_sex`, `household_student`, `household_education`, `employment`, `source`, `pregnant`, `last_preg`, `children`, `household_type`, `household_leader`, `household_relation`) VALUES
-(1, '1231', '123', '23', 'JR.', '0000-00-00', 123, 'MALE 	', 'NO', 'Completed senior high school', '', '', '', '0000-00-00', 1, '', '', ''),
-(2, '123123', '123123', '123123', 'SR.', '2018-02-06', 13, 'FEMALE', 'YES ', 'Enrolled in an undergraduate program at a university or college', '', '', '', '0000-00-00', 3, '', '', ''),
-(3, 'cydric', 'mayoaef', 'awefaw', 'aefwe', '2023-10-13', 14, '', '', '', '', '', '', '0000-00-00', 2, '', '', ''),
-(6, 'asasc', 'ascasscasca', 'acascas', 'SR.', '2023-10-03', 0, 'FEMALE', 'NO', 'Completed junior high school', '', '', '', '0000-00-00', 2, '', '', ''),
-(7, 'mayor', 'cydric', 'eguillos', '', '2000-11-19', 23, 'MALE 	', 'YES ', 'Completed junior high school', 'NO', '232', '', '2020-06-20', 4, '', '', ''),
-(21, 'bt', 'bt', '', '', '2023-10-03', 0, '', '', '', '', '', '', '0000-00-00', 0, '', '', ''),
-(22, 'gg', 'gg', '', '', '2023-10-03', 0, '', '', '', '', '', '', '0000-00-00', 0, '', '', ''),
-(23, 'tt', 'tt', '', '', '2023-10-03', 0, '', '', '', '', '', '', '0000-00-00', 0, '', '', ''),
-(24, 'hh', 'hh', '', '', '2023-10-03', 0, '', '', '', '', '', '', '0000-00-00', 0, '', '', ''),
-(25, 'uu', 'uu', '', '', '2023-10-03', 0, '', '', '', '', '', '', '0000-00-00', 0, '', '', ''),
-(26, 'th', 'th', '', '', '2023-10-03', 0, '', '', '', '', '', '', '0000-00-00', 0, '', '', ''),
-(27, 'yu', 'yu', '', '', '2023-10-03', 0, '', '', '', '', '', '', '0000-00-00', 0, '', '', ''),
-(28, '45', '45', '', '', '2023-10-03', 0, '', '', '', '', '', '', '0000-00-00', 0, '', '', ''),
-(29, 'ty', 'ty', '', '', '2023-10-03', 0, '', '', '', '', '', '', '0000-00-00', 0, '', '', ''),
-(30, '67', '67', '', '', '2023-10-03', 0, '', '', '', '', '', '', '0000-00-00', 0, '', '', ''),
-(31, 'tryc', 'tryc', '', '', '2023-10-03', 0, '', '', '', '', '', '', '0000-00-00', 0, '', '', 'OTHERS SPECIFY.... / anak'),
-(32, 'jjej', 'jeje', '', '', '2023-10-03', 0, '', '', '', '', '', '', '0000-00-00', 0, '', '', 'OTHERS SPECIFY.... / anak'),
-(33, 'fefe', 'fefe', '', '', '2023-10-03', 0, '', '', '', '', '', '', '0000-00-00', 0, '', '', ' / anakfef'),
-(34, 'fefe', 'fefe', '', '', '2023-10-03', 0, '', '', '', '', '', '', '0000-00-00', 0, '', '', ' / anak'),
-(35, 'q', 'q', '', '', '2023-10-03', 0, '', '', '', '', '', '', '0000-00-00', 0, '', '', ' / tatay'),
-(36, 'gege', 'gege', '', '', '2023-10-03', 0, '', '', '', '', '', '', '0000-00-00', 0, '', '', ' taayayya');
+INSERT INTO `tbl_households` (`household_id`, `household_lastname`, `household_firstname`, `household_middlename`, `household_suffix`, `household_birthdate`, `household_age`, `household_sex`, `household_student`, `household_education`, `employment`, `household_school`, `source`, `pregnant`, `last_preg`, `children`, `household_type`, `household_leader`, `household_relation`, `household_barangay`, `household_remarks`) VALUES
+(2, '1231', '123', '23', 'JR.', '0000-00-00', 123, 'MALE 	', 'NO', 'Completed senior high school', '', '', '', '', '0000-00-00', 1, '', '', '', '0', '0'),
+(3, '123123', '123123', '123123', 'SR.', '2018-02-06', 13, 'FEMALE', 'YES ', 'Enrolled in an undergraduate program at a university or college', '', '', '', '', '0000-00-00', 3, '', '', '', '0', '0'),
+(4, 'cydric', 'mayoaef', 'awefaw', 'aefwe', '2023-10-13', 14, '', '', '', '', '', '', '', '0000-00-00', 2, '', '', '', '0', '0'),
+(5, 'asasc', 'ascasscasca', 'acascas', 'SR.', '2023-10-03', 0, 'FEMALE', 'NO', 'Completed junior high school', '', '', '', '', '0000-00-00', 2, '', '', '', '0', '0'),
+(6, 'bt', 'bt', '', '', '2023-10-03', 0, '', '', '', '', '', '', '', '0000-00-00', 0, '', '', '', '0', '0'),
+(7, 'gg', 'gg', '', '', '2023-10-03', 0, '', '', '', '', '', '', '', '0000-00-00', 0, '', '', '', '0', '0'),
+(8, 'tt', 'tt', '', '', '2023-10-03', 0, '', '', '', '', '', '', '', '0000-00-00', 0, '', '', '', '0', '0'),
+(9, 'hh', 'hh', '', '', '2023-10-03', 0, '', '', '', '', '', '', '', '0000-00-00', 0, '', '', '', '0', '0'),
+(10, 'uu', 'uu', '', '', '2023-10-03', 0, '', '', '', '', '', '', '', '0000-00-00', 0, '', '', '', '0', '0'),
+(11, 'th', 'th', '', '', '2023-10-03', 0, '', '', '', '', '', '', '', '0000-00-00', 0, '', '', '', '0', '0'),
+(12, 'yu', 'yu', '', '', '2023-10-03', 0, '', '', '', '', '', '', '', '0000-00-00', 0, '', '', '', '0', '0'),
+(13, '45', '45', '', '', '2023-10-03', 0, '', '', '', '', '', '', '', '0000-00-00', 0, '', '', '', '0', '0'),
+(14, 'ty', 'ty', '', '', '2023-10-03', 0, '', '', '', '', '', '', '', '0000-00-00', 0, '', '', '', '0', '0'),
+(15, '67', '67', '', '', '2023-10-03', 0, '', '', '', '', '', '', '', '0000-00-00', 0, '', '', '', '0', '0'),
+(16, 'tryc', 'tryc', '', '', '2023-10-03', 0, '', '', '', '', '', '', '', '0000-00-00', 0, '', '', 'OTHERS SPECIFY.... / anak', '0', '0'),
+(17, 'jjej', 'jeje', '', '', '2023-10-03', 0, '', '', '', '', '', '', '', '0000-00-00', 0, '', '', 'OTHERS SPECIFY.... / anak', '0', '0'),
+(18, 'fefe', 'fefe', '', '', '2023-10-03', 0, '', '', '', '', '', '', '', '0000-00-00', 0, '', '', ' / anakfef', '0', '0'),
+(19, 'fefe', 'fefe', '', '', '2023-10-03', 0, '', '', '', '', '', '', '', '0000-00-00', 0, '', '', ' / anak', '0', '0'),
+(20, 'q', 'q', '', '', '2023-10-03', 0, '', '', '', '', '', '', '', '0000-00-00', 0, '', '', ' / tatay', '0', '0'),
+(21, 'gege', 'gege', '', '', '2023-10-03', 0, '', '', '', '', '', '', '', '0000-00-00', 0, '', '', ' taayayya', '0', '0'),
+(22, 'fva', 'aw', 'awef', 'SR', '2023-10-31', 56, 'M', '', 'Elementary Level', 'NO', 'grad', '123', 'YES', '2023-11-02', 123, 'LEADER', 'hatdog', 'MOTHER', 'GUMAMELA', 'APPROVED'),
+(23, 'wrer', 'wer', 'wer', 'JR', '2023-10-31', 0, 'M', '', 'Elementary Graduate', 'YES', '', 'wer', 'YES', '2023-11-02', 0, 'LEADER', 'wer', 'FATHER', 'BOUGAINVILLA', 'APPROVED');
 
 -- --------------------------------------------------------
 
@@ -310,21 +323,40 @@ INSERT INTO `tbl_households` (`household_id`, `household_lastname`, `household_f
 --
 
 CREATE TABLE `tbl_leaders` (
-  `id` int(11) NOT NULL,
-  `name` varchar(250) NOT NULL,
-  `address` varchar(250) NOT NULL,
-  `phone` varchar(250) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `leader_id` int(11) NOT NULL,
+  `leader_name` varchar(255) NOT NULL,
+  `leader_sex` varchar(10) NOT NULL,
+  `leader_age` int(11) NOT NULL,
+  `leader_civilstatus` varchar(20) NOT NULL,
+  `leader_barangay_id` int(11) DEFAULT NULL,
+  `leader_barangay` varchar(255) NOT NULL,
+  `leader_position` varchar(255) NOT NULL,
+  `leader_num_family_members` int(11) NOT NULL,
+  `leader_total_male` int(11) NOT NULL,
+  `leader_total_female` int(11) NOT NULL,
+  `leader_totalpwd_physical_male` int(11) NOT NULL,
+  `leader_totalpwd_physical_female` int(11) NOT NULL,
+  `leader_totalpwd_ndd_male` int(11) NOT NULL,
+  `leader_totalpwd_ndd_female` int(11) NOT NULL,
+  `leader_senior_male` int(11) NOT NULL,
+  `leader_senior_female` int(11) NOT NULL,
+  `leader_below_18_male` int(11) NOT NULL,
+  `leader_below_18_female` int(11) NOT NULL,
+  `leader_education_attainment` varchar(255) NOT NULL,
+  `leader_average_income` int(11) NOT NULL,
+  `leader_remarks` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_leaders`
 --
 
-INSERT INTO `tbl_leaders` (`id`, `name`, `address`, `phone`) VALUES
-(12, 'waef', '12e1', '312312'),
-(33, '44444', '33', 'sdfdsf'),
-(34, '1', '1', '907809'),
-(56, '56', '56', '56');
+INSERT INTO `tbl_leaders` (`leader_id`, `leader_name`, `leader_sex`, `leader_age`, `leader_civilstatus`, `leader_barangay_id`, `leader_barangay`, `leader_position`, `leader_num_family_members`, `leader_total_male`, `leader_total_female`, `leader_totalpwd_physical_male`, `leader_totalpwd_physical_female`, `leader_totalpwd_ndd_male`, `leader_totalpwd_ndd_female`, `leader_senior_male`, `leader_senior_female`, `leader_below_18_male`, `leader_below_18_female`, `leader_education_attainment`, `leader_average_income`, `leader_remarks`) VALUES
+(1, 'AWEF', 'F', 56, 'Married', NULL, 'GUMAMELA', 'PRESIDENT', 123, 23, 123, 123, 123, 0, 0, 123, 123, 123, 23, '', 0, 'APPROVED'),
+(3, 'fullnama', 'F', 21, 'Married', NULL, 'GUMAMELA', 'PRESIDENT', 2, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, '', 0, 'APPROVED'),
+(4, 'wer', 'BOUGAINVIL', 0, 'Married', NULL, 'wefw', 'PRESIDENT', 55, 44, 44, 44, 44, 0, 0, 44, 44, 44, 4, '', 0, 'NEW'),
+(5, 'drc', 'BOUGAINVIL', 0, 'Married', NULL, 'aw', 'PRESIDENT', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 'NEW'),
+(6, 'erser', 'BOUGAINVIL', 0, 'single', NULL, 'ascas', 'MEMBER', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 'NEW');
 
 -- --------------------------------------------------------
 
@@ -355,7 +387,23 @@ INSERT INTO `tbl_logs` (`ID`, `logs_username`, `logs_content`, `logs_date`) VALU
 (16, '123', 'Successfully login', 'October 30, 2023 09:41:13'),
 (17, '123', 'Successfully login', 'October 30, 2023 09:45:39'),
 (18, 'elar', 'Successfully login', 'October 30, 2023 10:33:19'),
-(19, 'elar', 'Successfully login', 'October 30, 2023 10:45:00');
+(19, 'elar', 'Successfully login', 'October 30, 2023 10:45:00'),
+(20, 'drix', 'Successfully login', 'November 02, 2023 06:44:49'),
+(21, 'drix', 'Successfully login', 'November 02, 2023 06:47:37'),
+(22, 'drix', 'Successfully login', 'November 02, 2023 06:55:57'),
+(23, 'drix', 'Successfully login', 'November 02, 2023 07:10:59'),
+(24, 'drix', 'Successfully login', 'November 02, 2023 07:13:54'),
+(25, 'drix', 'Successfully login', 'November 02, 2023 07:50:53'),
+(26, 'lou', 'Successfully login', 'November 02, 2023 10:30:30'),
+(27, 'lou', 'Successfully login', 'November 02, 2023 10:31:18'),
+(28, 'lou', 'Successfully login', 'November 02, 2023 10:35:47'),
+(29, 'drix', 'Successfully login', 'November 02, 2023 08:48:14'),
+(30, 'drix', 'Successfully login', 'November 02, 2023 08:52:05'),
+(31, 'drix', 'Successfully login', 'November 03, 2023 12:16:33'),
+(32, 'drix', 'Successfully login', 'November 03, 2023 12:20:12'),
+(33, 'louie', 'Successfully login', 'November 03, 2023 12:28:23'),
+(34, 'tatay', 'Successfully login', 'November 03, 2023 12:45:56'),
+(35, 'tatay', 'Successfully login', 'November 03, 2023 01:01:28');
 
 -- --------------------------------------------------------
 
@@ -418,29 +466,32 @@ CREATE TABLE `tbl_users` (
   `user_password` varchar(250) NOT NULL,
   `user_email` varchar(250) NOT NULL,
   `user_phone` int(11) NOT NULL,
-  `user_type` varchar(250) NOT NULL
+  `user_type` varchar(250) NOT NULL,
+  `user_fullname` varchar(255) NOT NULL,
+  `user_barangay` varchar(255) NOT NULL,
+  `user_remarks` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `tbl_users`
 --
 
-INSERT INTO `tbl_users` (`user_id`, `user_name`, `user_password`, `user_email`, `user_phone`, `user_type`) VALUES
-(1, '123', 'drix', 'asdasd', 0, 'ADMIN'),
-(5, '123', '123', 'kjbaj@gmail.com', 12351213, 'CLIENT'),
-(6, '2', '22', '2', 2, 'CLIENT'),
-(7, '4', '4', '4', 4, 'ADMIN'),
-(8, 'ada', 'awda', '', 0, ''),
-(9, 'wefwef', 'wfwe', '', 0, ''),
-(10, 'awef', 'wefaw', 'awfawf', 0, 'ADMIN'),
-(11, 'scSa', 'aSCa', 'AcA', 0, 'CLIENT'),
-(12, 'drix', 'drix', 'drid@gmail.com', 123124, 'CLIENT'),
-(13, '1234', '1234', 'drix@hatdog.com', 2147483647, ''),
-(14, 'qwd', 'qwd', 'qwqwd@gg', 0, ''),
-(15, 'lou', '123', 'lou@gmail.com', 2147483647, 'CLIENT'),
-(16, 'elar', 'elar', 'elar@gmail.com', 2147483647, ''),
-(17, 'faithuy', 'peeytt', 'faithuy@gmail.com', 2147483647, 'CLIENT'),
-(18, 'faithuyy', 'pityangg', 'faithuyy@gmail.com', 2147483647, 'CLIENT');
+INSERT INTO `tbl_users` (`user_id`, `user_name`, `user_password`, `user_email`, `user_phone`, `user_type`, `user_fullname`, `user_barangay`, `user_remarks`) VALUES
+(1, 'drix', '1234', 'drix@jduwowl', 90875656, 'CLIENT', 'drixmayor', 'BOUGAINVILLA', 'NEW'),
+(2, '123', '123', 'kjbaj@gmail.com', 12351213, 'CLIENT', '', 'BOUGAINVILLA', 'NEW'),
+(3, 'user', 'pass', 'email', 908, 'CLIENT', 'fullname', 'BOUGAINVILLA', 'APPROVED'),
+(4, '4', '4', '4', 4, 'ADMIN', 'drix', 'BOUGAINVILLA', 'NEW'),
+(5, 'ada', 'awda', '', 908, 'CLIENT', 'fullname', 'BOUGAINVILLA', 'NEW'),
+(6, 'wefwef', 'wfwe', '', 0, 'ADMIN', '', 'GUMAMELA', 'NEW'),
+(7, 'scSa', 'aSCa', 'AcA', 0, 'CLIENT', '', '', '0'),
+(8, 'drix', 'drix', 'drid@gmail.com', 123124, 'CLIENT', 'drixfull', '', '0'),
+(9, 'qwd', 'qwd', 'qwqwd@gg', 0, '', '', '', '0'),
+(10, 'lou', '123', 'lou@gmail.com', 2147483647, 'CLIENT', '', '', '0'),
+(11, 'elar', 'elar', 'elar@gmail.com', 2147483647, '', '', '', '0'),
+(12, 'faithuy', 'peeytt', 'faithuy@gmail.com', 2147483647, 'CLIENT', '', '', '0'),
+(13, 'faithuyy', 'pityangg', 'faithuyy@gmail.com', 2147483647, 'CLIENT', '', '', '0'),
+(14, 'louie', '1234', 'loiue@gmail.com', 2147483647, '', '', '', ''),
+(15, 'tatay', 'tatay', 'tatay@gmail.com', 13212423, '', 'tatayhahaha', '', 'APPROVED');
 
 -- --------------------------------------------------------
 
@@ -556,7 +607,8 @@ ALTER TABLE `tbl_households`
 -- Indexes for table `tbl_leaders`
 --
 ALTER TABLE `tbl_leaders`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`leader_id`),
+  ADD KEY `FK_leader_barangay` (`leader_barangay_id`);
 
 --
 -- Indexes for table `tbl_logs`
@@ -603,7 +655,7 @@ ALTER TABLE `test_test`
 -- AUTO_INCREMENT for table `acrceditations`
 --
 ALTER TABLE `acrceditations`
-  MODIFY `AcrceditationID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `AcrceditationID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `barangays`
 --
@@ -625,15 +677,35 @@ ALTER TABLE `pregnant`
 ALTER TABLE `provinces`
   MODIFY `ProvinceID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
+-- AUTO_INCREMENT for table `tbl_accreditations`
+--
+ALTER TABLE `tbl_accreditations`
+  MODIFY `accreditation_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `tbl_households`
+--
+ALTER TABLE `tbl_households`
+  MODIFY `household_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+--
+-- AUTO_INCREMENT for table `tbl_leaders`
+--
+ALTER TABLE `tbl_leaders`
+  MODIFY `leader_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+--
 -- AUTO_INCREMENT for table `tbl_logs`
 --
 ALTER TABLE `tbl_logs`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 --
 -- AUTO_INCREMENT for table `tbl_org`
 --
 ALTER TABLE `tbl_org`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT for table `tbl_users`
+--
+ALTER TABLE `tbl_users`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 --
 -- Constraints for dumped tables
 --
@@ -643,6 +715,12 @@ ALTER TABLE `tbl_org`
 --
 ALTER TABLE `tbl_accreditations`
   ADD CONSTRAINT `tbl_accreditations_ibfk_1` FOREIGN KEY (`BarangayID`) REFERENCES `barangays` (`BarangayID`);
+
+--
+-- Constraints for table `tbl_leaders`
+--
+ALTER TABLE `tbl_leaders`
+  ADD CONSTRAINT `FK_leader_barangay` FOREIGN KEY (`leader_barangay_id`) REFERENCES `barangays` (`BarangayID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
