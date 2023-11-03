@@ -2,11 +2,10 @@
 // Remove any HTML content or warnings
 ob_clean();
 
-// Database connection details
-$db_host = 'sql12.freesqldatabase.com';
+$db_host = 'localhost';
 $db_name = 'sql12657302';
-$db_user = 'sql12657302';
-$db_password = 'fccsdFclad';
+$db_user = 'root';
+$db_password = 'arzelzolina10';
 
 try {
     // Create a new PDO instance
