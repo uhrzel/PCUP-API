@@ -2,7 +2,8 @@
 $db_host = 'localhost';
 $db_name = 'sql12657302';
 $db_user = 'root';
-$db_password = 'arzelzolina10';
+$db_password = '';
+
 
 try {
     // Create a PDO instance to connect to the database
@@ -10,16 +11,16 @@ try {
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // Retrieve data from the POST request
-    $programName = $_POST['report_name'];
-    $facilitator = $_POST['report_facilitator'];
-    $date = $_POST['report_date'];
-    $barangay = $_POST['report_barangay'];
-    $description = $_POST['report_objective'];
+    $crimeViolation = $_POST['crime_violation'];
+    $crimeDate = $_POST['crime_date'];
+    $crimeVictim = $_POST['crime_victim'];
+    $crimeViolator = $_POST['crime_perpetrator'];
+    $crimeBarangay = $_POST['crime_barangay'];
 
 
     // Create a prepared statement
-    $stmt = $pdo->prepare("INSERT INTO tbl_reports(report_name, report_facilitator, report_date, report_barangay, report_objective) VALUES (?,?,?,?,?)");
-    $stmt->execute([$programName, $facilitator, $date, $barangay, $description]);
+    $stmt = $pdo->prepare("INSERT INTO tbl_crime(crime_violation, crime_date, crime_victim, crime_perpetrator, crime_barangay) VALUES (?,?,?,?,?)");
+    $stmt->execute([$crimeViolation, $crimeDate, $crimeVictim, $crimeViolator, $crimeBarangay]);
     // Respond with a success message as JSON
     $response = array('message' => 'Data inserted successfully');
     echo json_encode($response);

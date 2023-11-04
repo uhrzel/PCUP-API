@@ -2,7 +2,8 @@
 $db_host = 'localhost';
 $db_name = 'sql12657302';
 $db_user = 'root';
-$db_password = 'arzelzolina10';
+$db_password = '';
+
 
 try {
     // Create a PDO instance to connect to the database

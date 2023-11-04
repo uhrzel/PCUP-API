@@ -3,14 +3,15 @@
 $db_host = 'localhost';
 $db_name = 'sql12657302';
 $db_user = 'root';
-$db_password = 'arzelzolina10';
+$db_password = '';
+
 
 try {
     $pdo = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user, $db_password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-
-    $stmt = $pdo->query('SELECT * FROM tbl_crime'); // Use the correct table name
+    // Fetch data from the 'acrceditations' table (use the correct table name)
+    $stmt = $pdo->query('SELECT * FROM tbl_accreditations'); // Use the correct table name
     $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     // Set response headers
