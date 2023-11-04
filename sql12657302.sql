@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: sql12.freesqldatabase.com
--- Generation Time: Nov 02, 2023 at 05:09 PM
+-- Generation Time: Nov 03, 2023 at 06:33 PM
 -- Server version: 5.5.62-0ubuntu0.14.04.1
 -- PHP Version: 7.0.33-0ubuntu0.16.04.16
 
@@ -254,9 +254,31 @@ CREATE TABLE `tbl_accreditations` (
 --
 
 INSERT INTO `tbl_accreditations` (`accreditation_id`, `accreditation_name`, `accreditation_barangay`, `BarangayID`, `accreditation_address`, `accreditation_contactperson`, `accreditation_phone`, `accreditation_number`, `accreditation_issued`, `accreditation_expired`, `accreditation_president`, `accreditation_type`, `accreditation_ddress`, `accreditation_members`, `accreditation_population`, `accreditation_belowm`, `accreditation_belowf`, `accreditation_belowo`, `accreditation_abovem`, `accreditation_abovef`, `accreditation_aboveo`, `accreditation_area`, `accreditation_class`, `accreditation_programs`, `accreditation_problems`, `accreditation_coordinator`, `accreditation_created`, `accreditation_remarks`) VALUES
-(1, 'PCUP', 'BOUGAINVILLA', NULL, '', 'Faith', '09456545414', '02021', 'November 02 2023', 'October 31 2023', 'lou', NULL, NULL, '5', '100', NULL, NULL, NULL, NULL, NULL, NULL, 'small', 'dfgfds', 'dfgds', 'pregnancy rate', 'dfsgfd', NULL, 'NEW'),
+(1, 'PCUP', 'BOUGAINVILLA', NULL, '', 'Faith', '09456545414', '02021', 'October 31, 2023', 'October 31, 2023', 'lou', NULL, NULL, '5', '100', NULL, NULL, NULL, NULL, NULL, NULL, 'small', 'dfgfds', 'awef - awefwaef', 'pregnancy rate', 'dfsgfd', NULL, 'APPROVED'),
 (2, 'APPROVED', 'GUMAMELA', NULL, '234234', '23423', '', '', 'October 31 2023', 'Expiration : \r\n', '', NULL, NULL, '', '', NULL, NULL, NULL, NULL, NULL, NULL, '', '', '', '', '', NULL, 'APPROVED'),
-(3, 'orgname', 'GUMAMELA', NULL, 'adress', 'contact', 'phone', 'acc number', 'October 31, 2023', 'October 31, 2023', 'presi', NULL, NULL, 'total ofice', 'poulation', NULL, NULL, NULL, NULL, NULL, NULL, 'area', 'class', 'programs', 'problem', 'acc officer', NULL, 'APPROVED');
+(3, 'orgname', 'GUMAMELA', NULL, 'adress', 'contact', 'phone', 'acc number', 'October 31, 2023', 'October 31, 2023', 'presi', NULL, NULL, 'total ofice', 'poulation', NULL, NULL, NULL, NULL, NULL, NULL, 'area', 'class', 'ssdcsdc - sdsdcs', 'problem', 'acc officer', NULL, 'APPROVED');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_crime`
+--
+
+CREATE TABLE `tbl_crime` (
+  `crime_id` int(11) NOT NULL,
+  `crime_violation` varchar(255) NOT NULL,
+  `crime_date` varchar(255) NOT NULL,
+  `crime_victim` varchar(255) NOT NULL,
+  `crime_perpetrator` varchar(255) NOT NULL,
+  `crime_barangay` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_crime`
+--
+
+INSERT INTO `tbl_crime` (`crime_id`, `crime_violation`, `crime_date`, `crime_victim`, `crime_perpetrator`, `crime_barangay`) VALUES
+(1, 'thief', '04/10/2023', 'ako', 'ikaw', 'BOUGAINVILLA');
 
 -- --------------------------------------------------------
 
@@ -296,8 +318,8 @@ INSERT INTO `tbl_households` (`household_id`, `household_lastname`, `household_f
 (2, '1231', '123', '23', 'JR.', '0000-00-00', 123, 'MALE 	', 'NO', 'Completed senior high school', '', '', '', '', '0000-00-00', 1, '', '', '', '0', '0'),
 (3, '123123', '123123', '123123', 'SR.', '2018-02-06', 13, 'FEMALE', 'YES ', 'Enrolled in an undergraduate program at a university or college', '', '', '', '', '0000-00-00', 3, '', '', '', '0', '0'),
 (4, 'cydric', 'mayoaef', 'awefaw', 'aefwe', '2023-10-13', 14, '', '', '', '', '', '', '', '0000-00-00', 2, '', '', '', '0', '0'),
-(5, 'asasc', 'ascasscasca', 'acascas', 'SR.', '2023-10-03', 0, 'FEMALE', 'NO', 'Completed junior high school', '', '', '', '', '0000-00-00', 2, '', '', '', '0', '0'),
-(6, 'bt', 'bt', '', '', '2023-10-03', 0, '', '', '', '', '', '', '', '0000-00-00', 0, '', '', '', '0', '0'),
+(5, 'asasc', 'ascasscasca', 'acascas', 'SR.', '2023-10-03', 21, 'FEMALE', 'NO', 'Completed junior high school', '', '', '', '', '0000-00-00', 2, '', '', '', '0', '0'),
+(6, 'bt', 'bt', '', '', '2023-10-03', 51, '', '', '', '', '', '', '', '0000-00-00', 0, '', '', '', '0', '0'),
 (7, 'gg', 'gg', '', '', '2023-10-03', 0, '', '', '', '', '', '', '', '0000-00-00', 0, '', '', '', '0', '0'),
 (8, 'tt', 'tt', '', '', '2023-10-03', 0, '', '', '', '', '', '', '', '0000-00-00', 0, '', '', '', '0', '0'),
 (9, 'hh', 'hh', '', '', '2023-10-03', 0, '', '', '', '', '', '', '', '0000-00-00', 0, '', '', '', '0', '0'),
@@ -314,7 +336,7 @@ INSERT INTO `tbl_households` (`household_id`, `household_lastname`, `household_f
 (20, 'q', 'q', '', '', '2023-10-03', 0, '', '', '', '', '', '', '', '0000-00-00', 0, '', '', ' / tatay', '0', '0'),
 (21, 'gege', 'gege', '', '', '2023-10-03', 0, '', '', '', '', '', '', '', '0000-00-00', 0, '', '', ' taayayya', '0', '0'),
 (22, 'fva', 'aw', 'awef', 'SR', '2023-10-31', 56, 'M', '', 'Elementary Level', 'NO', 'grad', '123', 'YES', '2023-11-02', 123, 'LEADER', 'hatdog', 'MOTHER', 'GUMAMELA', 'APPROVED'),
-(23, 'wrer', 'wer', 'wer', 'JR', '2023-10-31', 0, 'M', '', 'Elementary Graduate', 'YES', '', 'wer', 'YES', '2023-11-02', 0, 'LEADER', 'wer', 'FATHER', 'BOUGAINVILLA', 'APPROVED');
+(23, 'wrer', 'wer', 'wer', 'JR', '2023-10-31', 0, 'M', '', 'Elementary Graduate', 'YES', '', 'wer', 'YES', '2023-11-02', 0, 'LEADER', 'wer', 'GRANDMOTHER', 'BOUGAINVILLA', 'APPROVED');
 
 -- --------------------------------------------------------
 
@@ -352,11 +374,9 @@ CREATE TABLE `tbl_leaders` (
 --
 
 INSERT INTO `tbl_leaders` (`leader_id`, `leader_name`, `leader_sex`, `leader_age`, `leader_civilstatus`, `leader_barangay_id`, `leader_barangay`, `leader_position`, `leader_num_family_members`, `leader_total_male`, `leader_total_female`, `leader_totalpwd_physical_male`, `leader_totalpwd_physical_female`, `leader_totalpwd_ndd_male`, `leader_totalpwd_ndd_female`, `leader_senior_male`, `leader_senior_female`, `leader_below_18_male`, `leader_below_18_female`, `leader_education_attainment`, `leader_average_income`, `leader_remarks`) VALUES
-(1, 'AWEF', 'F', 56, 'Married', NULL, 'GUMAMELA', 'PRESIDENT', 123, 23, 123, 123, 123, 0, 0, 123, 123, 123, 23, '', 0, 'APPROVED'),
 (3, 'fullnama', 'F', 21, 'Married', NULL, 'GUMAMELA', 'PRESIDENT', 2, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, '', 0, 'APPROVED'),
-(4, 'wer', 'BOUGAINVIL', 0, 'Married', NULL, 'wefw', 'PRESIDENT', 55, 44, 44, 44, 44, 0, 0, 44, 44, 44, 4, '', 0, 'NEW'),
-(5, 'drc', 'BOUGAINVIL', 0, 'Married', NULL, 'aw', 'PRESIDENT', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 'NEW'),
-(6, 'erser', 'BOUGAINVIL', 0, 'single', NULL, 'ascas', 'MEMBER', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 'NEW');
+(4, 'wer', 'BOUGAINVIL', 45, 'Married', NULL, 'wefw', 'PRESIDENT', 55, 44, 44, 44, 44, 0, 0, 44, 44, 44, 4, '', 0, 'NEW'),
+(6, 'erser', 'BOUGAINVIL', 0, 'single', NULL, 'ascas', 'MEMBER', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 'APPROVED');
 
 -- --------------------------------------------------------
 
@@ -403,7 +423,15 @@ INSERT INTO `tbl_logs` (`ID`, `logs_username`, `logs_content`, `logs_date`) VALU
 (32, 'drix', 'Successfully login', 'November 03, 2023 12:20:12'),
 (33, 'louie', 'Successfully login', 'November 03, 2023 12:28:23'),
 (34, 'tatay', 'Successfully login', 'November 03, 2023 12:45:56'),
-(35, 'tatay', 'Successfully login', 'November 03, 2023 01:01:28');
+(35, 'tatay', 'Successfully login', 'November 03, 2023 01:01:28'),
+(36, 'user', 'Successfully login', 'November 03, 2023 01:11:43'),
+(37, 'user', 'Successfully login', 'November 03, 2023 01:17:57'),
+(38, 'user', 'Successfully login', 'November 03, 2023 12:04:33'),
+(39, '123', 'Successfully login', 'November 03, 2023 12:17:47'),
+(40, '123', 'Successfully login', 'November 03, 2023 12:29:55'),
+(41, '123', 'Successfully login', 'November 03, 2023 12:32:27'),
+(42, '123', 'Successfully login', 'November 03, 2023 12:52:47'),
+(43, '123', 'Successfully login', 'November 03, 2023 12:57:07');
 
 -- --------------------------------------------------------
 
@@ -457,6 +485,31 @@ INSERT INTO `tbl_org` (`ID`, `OrgName`, `Address`, `Phone`, `ContactPerson`, `Re
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tbl_reports`
+--
+
+CREATE TABLE `tbl_reports` (
+  `report_id` int(11) NOT NULL,
+  `report_name` varchar(255) NOT NULL,
+  `report_facilitator` varchar(255) NOT NULL,
+  `report_date` varchar(255) NOT NULL,
+  `report_objective` varchar(255) NOT NULL,
+  `report_barangay` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_reports`
+--
+
+INSERT INTO `tbl_reports` (`report_id`, `report_name`, `report_facilitator`, `report_date`, `report_objective`, `report_barangay`) VALUES
+(1, 'ssdcsdc', 'sdsdcs', '31/10/2023', 'basta la', 'BOUGAINVILLA'),
+(2, 'awef', 'awefwaef', '31/10/2023', 'awefaw', 'BOUGAINVILLA'),
+(4, 'program', 'faci', '31/10/2023', '\r\nobj', 'BOUGAINVILLA'),
+(5, 'pabahay', 'akonala', '28/02/2019', 'luawvkawjvlawgfahwbcbkjawgechawbecmawc', 'BOUGAINVILLA');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tbl_users`
 --
 
@@ -478,12 +531,10 @@ CREATE TABLE `tbl_users` (
 
 INSERT INTO `tbl_users` (`user_id`, `user_name`, `user_password`, `user_email`, `user_phone`, `user_type`, `user_fullname`, `user_barangay`, `user_remarks`) VALUES
 (1, 'drix', '1234', 'drix@jduwowl', 90875656, 'CLIENT', 'drixmayor', 'BOUGAINVILLA', 'NEW'),
-(2, '123', '123', 'kjbaj@gmail.com', 12351213, 'CLIENT', '', 'BOUGAINVILLA', 'NEW'),
+(2, '123', '123', 'kjbaj@gmail.com', 12351213, 'CLIENT', '', 'BOUGAINVILLA', 'APPROVED'),
 (3, 'user', 'pass', 'email', 908, 'CLIENT', 'fullname', 'BOUGAINVILLA', 'APPROVED'),
 (4, '4', '4', '4', 4, 'ADMIN', 'drix', 'BOUGAINVILLA', 'NEW'),
-(5, 'ada', 'awda', '', 908, 'CLIENT', 'fullname', 'BOUGAINVILLA', 'NEW'),
-(6, 'wefwef', 'wfwe', '', 0, 'ADMIN', '', 'GUMAMELA', 'NEW'),
-(7, 'scSa', 'aSCa', 'AcA', 0, 'CLIENT', '', '', '0'),
+(7, 'scSa', 'aSCa', 'AcA', 0, 'CLIENT', '', '', 'APPROVED'),
 (8, 'drix', 'drix', 'drid@gmail.com', 123124, 'CLIENT', 'drixfull', '', '0'),
 (9, 'qwd', 'qwd', 'qwqwd@gg', 0, '', '', '', '0'),
 (10, 'lou', '123', 'lou@gmail.com', 2147483647, 'CLIENT', '', '', '0'),
@@ -491,7 +542,10 @@ INSERT INTO `tbl_users` (`user_id`, `user_name`, `user_password`, `user_email`, 
 (12, 'faithuy', 'peeytt', 'faithuy@gmail.com', 2147483647, 'CLIENT', '', '', '0'),
 (13, 'faithuyy', 'pityangg', 'faithuyy@gmail.com', 2147483647, 'CLIENT', '', '', '0'),
 (14, 'louie', '1234', 'loiue@gmail.com', 2147483647, '', '', '', ''),
-(15, 'tatay', 'tatay', 'tatay@gmail.com', 13212423, '', 'tatayhahaha', '', 'APPROVED');
+(15, 'tatay', 'tatay', 'tatay@gmail.com', 13212423, '', 'tatayhahaha', '', 'APPROVED'),
+(16, 'esrg', 'esrg', 'serg', 0, 'CLIENT', 'serg', 'GUMAMELA', 'NEW'),
+(17, '0', '0', '0@gmail.com', 0, 'CLIENT', '', '', 'APPROVED'),
+(18, 'sirneil', 'sirneil', 'sirneil@gmail.com', 908080123, '', 'sirneil', '', 'NEW');
 
 -- --------------------------------------------------------
 
@@ -598,6 +652,12 @@ ALTER TABLE `tbl_accreditations`
   ADD KEY `BarangayID` (`BarangayID`);
 
 --
+-- Indexes for table `tbl_crime`
+--
+ALTER TABLE `tbl_crime`
+  ADD PRIMARY KEY (`crime_id`);
+
+--
 -- Indexes for table `tbl_households`
 --
 ALTER TABLE `tbl_households`
@@ -627,6 +687,12 @@ ALTER TABLE `tbl_members`
 --
 ALTER TABLE `tbl_org`
   ADD PRIMARY KEY (`ID`);
+
+--
+-- Indexes for table `tbl_reports`
+--
+ALTER TABLE `tbl_reports`
+  ADD PRIMARY KEY (`report_id`);
 
 --
 -- Indexes for table `tbl_users`
@@ -682,6 +748,11 @@ ALTER TABLE `provinces`
 ALTER TABLE `tbl_accreditations`
   MODIFY `accreditation_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
+-- AUTO_INCREMENT for table `tbl_crime`
+--
+ALTER TABLE `tbl_crime`
+  MODIFY `crime_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
 -- AUTO_INCREMENT for table `tbl_households`
 --
 ALTER TABLE `tbl_households`
@@ -695,17 +766,22 @@ ALTER TABLE `tbl_leaders`
 -- AUTO_INCREMENT for table `tbl_logs`
 --
 ALTER TABLE `tbl_logs`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 --
 -- AUTO_INCREMENT for table `tbl_org`
 --
 ALTER TABLE `tbl_org`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
+-- AUTO_INCREMENT for table `tbl_reports`
+--
+ALTER TABLE `tbl_reports`
+  MODIFY `report_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+--
 -- AUTO_INCREMENT for table `tbl_users`
 --
 ALTER TABLE `tbl_users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 --
 -- Constraints for dumped tables
 --
